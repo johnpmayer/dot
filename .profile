@@ -20,5 +20,6 @@ alias vir="vim -R"
 alias clip="xclip -selection clipboard"
 
 alias serv="sudo http-server -p 80 . "
+alias pyserv="sudo python -m SimpleHTTPServer 80"
 
 alias edi="vi ~/.profile; . ~/.profile"

@@ -16,8 +16,8 @@ nnoremap <C-J> <C-w><C-J>
 nnoremap <C-K> <C-w><C-K>
 nnoremap <C-L> <C-w><C-L>
 
-nnoremap <C-M> <C-w>_<C-w>\|
-nnoremap <C-N> <C-w>=
+" nnoremap <C-M> <C-w>_<C-w>\|
+" nnoremap <C-N> <C-w>=
 
 set splitbelow
 set splitright
