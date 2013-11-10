@@ -9,6 +9,10 @@ filetype plugin indent on
 
 au BufNewFile,BufRead *.tt set filetype=html
 
+" Typescript
+
+au BufNewFile,BufRead *.ts set filetype=javascript
+
 " Vim Splits
 
 nnoremap <C-H> <C-w><C-H>

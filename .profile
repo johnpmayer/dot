@@ -7,6 +7,8 @@ export PATH=${HOME}/.cabal/bin:${PATH}
 export PATH=${HOME}/bin:${PATH}
 export PATH=${HOME}/workspace/go/bin:${PATH}
 
+alias ll='ls -lthra'
+
 alias gs='git status'
 alias gb='git branch'
 alias gv="git log -n 15 --graph --all --format=format:'%C(blue)%h%C(reset) - %C(cyan)%aD%C(reset) %C(green)(%ar)%C(reset)%C(yellow)%d%C(reset)%n''          %C(white)%s%C(reset) %C(bold white). %an%C(reset)' --abbrev-commit"
@@ -20,6 +22,9 @@ alias vir="vim -R"
 alias clip="xclip -selection clipboard"
 
 alias serv="sudo http-server -p 80 . "
-alias pyserv="sudo python -m SimpleHTTPServer 80"
+alias sudo="sudo "
+alias pyserv='python -m SimpleHTTPServer'
 
 alias edi="vi ~/.profile; . ~/.profile"
+
+alias saycode="if [ $? -eq 0 ]; then say done; else say error; fi"
