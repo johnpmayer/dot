@@ -28,3 +28,7 @@ alias pyserv='python -m SimpleHTTPServer'
 alias edi="vi ~/.profile; . ~/.profile"
 
 alias saycode="if [ $? -eq 0 ]; then say done; else say error; fi"
+
+alias tml="tmux list-sessions"
+alias tmn="tmux new-session -s"
+alias tma="tmux attach-session -t"
