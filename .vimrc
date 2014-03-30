@@ -3,7 +3,7 @@ set nocompatible
 set nu
 syntax on
 set autoindent
-set shiftwidth=4 tabstop=4 expandtab softtabstop=4
+set shiftwidth=2 tabstop=2 expandtab softtabstop=2
 
 filetype plugin indent on
 

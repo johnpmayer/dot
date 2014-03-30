@@ -32,3 +32,6 @@ alias saycode="if [ $? -eq 0 ]; then say done; else say error; fi"
 alias tml="tmux list-sessions"
 alias tmn="tmux new-session -s"
 alias tma="tmux attach-session -t"
+
+# GHC 7.8
+export PATH=/opt/ghc/7.8.1/bin:$PATH
