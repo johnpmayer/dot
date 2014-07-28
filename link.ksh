@@ -2,9 +2,7 @@
 
 set -x
 
-CWD=$(pwd)
-
-cat LOCATIONS | while read dotfile directory
+cat LOCATIONS | while read dotfile
 do
-	ln -sf ${HOME}/dot/${dotfile} ${HOME}/${directory}/${dotfile}
+	ln -sf ${HOME}/dot/${dotfile} ${HOME}/${dotfile}
 done

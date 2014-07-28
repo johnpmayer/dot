@@ -35,3 +35,5 @@ alias tma="tmux attach-session -t"
 
 # GHC 7.8
 export PATH=/opt/ghc/7.8.1/bin:$PATH
+
+alias ght="ghci Test/Run.hs <<<main"

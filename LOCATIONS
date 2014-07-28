@@ -1,4 +1,5 @@
-.gitconfig .
-.vimrc .
-.profile .
-.tmux.conf .
+.gitconfig
+.vimrc
+.profile 
+.tmux.conf 
+.cabal/config
