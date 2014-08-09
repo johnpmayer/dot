@@ -2,7 +2,12 @@
 set nocompatible
 filetype off
 set rtp+=~/.vim/bundle/vundle
-call vundle#rc()
+call vundle#begin()
+
+Plugin 'wting/rust.vim'
+
+call vundle#end()
+filetype plugin indent on
 
 " Basic editor behavior
 set nu
