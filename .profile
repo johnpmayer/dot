@@ -1,13 +1,8 @@
 set -o vi
 
-export PATH=${HOME}/workspace/HaLVM/dist/bin:${PATH}
-export PROF=${HOME}/.profile
-export HALVM_DIR=${HOME}/workspace/HaLVM/dist
-export PATH=${HOME}/.cabal/bin:${PATH}
 export PATH=${HOME}/bin:${PATH}
-export PATH=${HOME}/workspace/go/bin:${PATH}
 
-alias ll='ls -lthra'
+alias ls='ls -lthra'
 
 alias gs='git status'
 alias gb='git branch'
@@ -17,9 +12,8 @@ alias gpa='for r in $(git remote); do git push --all $r; done'
 alias gp='git push --all'
 alias gpt='git push --tags'
 alias gf='git fetch --all'
+
 alias vi="vim"
-alias vir="vim -R"
-alias clip="xclip -selection clipboard"
 
 alias serv="sudo http-server -p 80 . "
 alias sudo="sudo "
@@ -27,15 +21,17 @@ alias pyserv='python -m SimpleHTTPServer'
 
 alias edi="vi ~/.profile; . ~/.profile"
 
-alias saycode="if [ $? -eq 0 ]; then say done; else say error; fi"
-
 alias tml="tmux list-sessions"
 alias tmn="tmux new-session -s"
 alias tma="tmux attach-session -t"
 
-# GHC 7.8
-export PATH=/opt/ghc/7.8.1/bin:$PATH
+export CABAL_BIN='/home/ubuntu/.cabal/bin'
+export PATH=${CABAL_BIN}:${PATH}
 
-alias ght="ghci Test/Run.hs <<<main"
+export ELM_BIN='/home/ubuntu/elm-platform/installers/Elm-Platform/master/bin'
+export PATH=${ELM_BIN}:${PATH}
 
-export PATH=/usr/local/Elm-Platform/0.13/.cabal-sandbox/bin:$PATH
+if [ -f ${HOME}/.proxy_profile ]
+then
+  . "${HOME}/.proxy_profile"
+fi
