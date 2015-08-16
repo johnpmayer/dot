@@ -1,6 +1,6 @@
 set -o vi
 
-export PATH=${HOME}/bin:${PATH}
+export PATH="${HOME}/bin:${PATH}"
 
 alias ls='ls -lthra'
 
@@ -30,6 +30,11 @@ export PATH=${CABAL_BIN}:${PATH}
 
 export ELM_BIN='/home/ubuntu/elm-platform/installers/Elm-Platform/master/bin'
 export PATH=${ELM_BIN}:${PATH}
+
+export GOPATH="${HOME}/go"
+export GOBIN="${GOPATH}/bin"
+
+export PATH="${GOBIN}:${PATH}"
 
 if [ -f ${HOME}/.proxy_profile ]
 then

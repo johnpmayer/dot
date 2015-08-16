@@ -5,6 +5,7 @@ set rtp+=~/.vim/bundle/vundle
 call vundle#begin()
 
 Plugin 'wting/rust.vim'
+Plugin 'fatih/vim-go'
 
 call vundle#end()
 filetype plugin indent on
