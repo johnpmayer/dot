@@ -6,6 +6,7 @@ call vundle#begin()
 
 Plugin 'wting/rust.vim'
 Plugin 'fatih/vim-go'
+Plugin 'elmcast/elm-vim'
 
 call vundle#end()
 filetype plugin indent on

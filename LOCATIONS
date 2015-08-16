@@ -1,4 +1,5 @@
 .gitconfig
+.gitignore
 .vimrc
 .profile 
 .tmux.conf 
