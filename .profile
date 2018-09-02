@@ -50,3 +50,5 @@ export GOPATH='${HOME}/go'
 export GOBIN="${GOPATH}/bin"
 #export GOBIN='/usr/local/go/bin'
 export PATH=${GOBIN}:${PATH}
+
+if [ -e "$HOME/.nix-profile/etc/profile.d/nix.sh" ]; then . "$HOME/.nix-profile/etc/profile.d/nix.sh"; fi # (copied from nix edited profile)

@@ -1,4 +1,4 @@
-#!/usr/bin/ksh
+#!/usr/bin/env bash
 
 set -x
 
