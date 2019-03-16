@@ -25,30 +25,5 @@ alias tml="tmux list-sessions"
 alias tmn="tmux new-session -s"
 alias tma="tmux attach-session -t"
 
-export CABAL_BIN='/home/ubuntu/.cabal/bin'
-export PATH=${CABAL_BIN}:${PATH}
-
-export ELM_BIN='/home/ubuntu/elm-platform/installers/Elm-Platform/master/bin'
-export PATH=${ELM_BIN}:${PATH}
-
-export GOPATH="${HOME}/go"
-export GOBIN="${GOPATH}/bin"
-
-export PATH="${GOBIN}:${PATH}"
-
-if [ -f ${HOME}/.proxy_profile ]
-then
-  . "${HOME}/.proxy_profile"
-fi
-
-export CAPNP_RUST_BIN='${HOME}/capn/capnpc-rust/target/release'
-export PATH=${CAPNP_RUST_BIN}:${PATH}
-
-alias cargo-init="cargo new UNIQUE_CARGO_NAME; mv UNIQUE_CARGO_NAME/Cargo.toml UNIQUE_CARGO_NAME/src .; rm -rf UNIQUE_CARGO_NAME"
-
-export GOPATH='${HOME}/go'
-export GOBIN="${GOPATH}/bin"
-#export GOBIN='/usr/local/go/bin'
-export PATH=${GOBIN}:${PATH}
-
 if [ -e "$HOME/.nix-profile/etc/profile.d/nix.sh" ]; then . "$HOME/.nix-profile/etc/profile.d/nix.sh"; fi # (copied from nix edited profile)
+
