@@ -1,8 +1,6 @@
-set -o vi
+#set -o vi
 
 export PATH="${HOME}/bin:${PATH}"
-
-alias ls='ls -lthra'
 
 alias gs='git status'
 alias gb='git branch'
@@ -25,5 +23,6 @@ alias tml="tmux list-sessions"
 alias tmn="tmux new-session -s"
 alias tma="tmux attach-session -t"
 
-if [ -e "$HOME/.nix-profile/etc/profile.d/nix.sh" ]; then . "$HOME/.nix-profile/etc/profile.d/nix.sh"; fi # (copied from nix edited profile)
+export PATH="$HOME/.cargo/bin:$PATH"
 
+export SPATIAL_LIB_DIR="$HOME/fun/spatialos-sdk-rs/dependencies"
