@@ -26,3 +26,9 @@ alias tma="tmux attach-session -t"
 export PATH="$HOME/.cargo/bin:$PATH"
 
 export SPATIAL_LIB_DIR="$HOME/fun/spatialos-sdk-rs/dependencies"
+
+# Nix
+if [[ -e '/nix/var/nix/profiles/default/etc/profile.d/nix-daemon.sh' ]] ; then
+. '/nix/var/nix/profiles/default/etc/profile.d/nix-daemon.sh'
+fi
+# End Nix
